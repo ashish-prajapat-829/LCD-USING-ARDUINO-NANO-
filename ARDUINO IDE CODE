@@ -1,0 +1,22 @@
+#include <LiquidCrystal.h>
+
+int rs = 12;
+int en = 11;
+int D4 = 10;
+int D5 = 9;
+int D6 = 8;
+int D7 = 7;
+LiquidCrystal lcd(rs, en, D4, D5, D6, D7);
+
+void setup() {
+
+  lcd.begin(16, 2);
+}
+
+void loop() {
+  lcd.setCursor(5,0);
+  lcd.print("ASHISH");
+
+   lcd.setCursor(5,1);
+  lcd.print("PRAJAPAT");
+}
